@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+@import '../css/Auth//login.css';
+@import '../css/Components/toaster.css';
+@import '../css/Components/header.css';
+@import '../css/Components/footer.css';

@@ -1,0 +1,65 @@
+    .nav {
+      background-color: #333;
+      color: #fff;
+      padding: 0.5rem 1rem;
+    }
+
+    .nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    .menu-icon {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    ul.nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    ul.nav-links li a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem;
+      transition: background 0.3s;
+    }
+
+    ul.nav-links li a:hover {
+      background: #555;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      ul.nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+
+      input[type="checkbox"]:checked ~ ul.nav-links {
+        display: flex;
+      }
+
+      ul.nav-links li {
+        text-align: center;
+      }
+    }
