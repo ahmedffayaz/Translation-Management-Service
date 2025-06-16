@@ -38,10 +38,13 @@ Follow these steps to set up the project on your local machine:
 ```bash
 git clone https://github.com/ahmedffayaz/Translation-Management-Service
 cd translation-management-service
-install dependencies for laravel 
-install npm
+install dependencies for laravel (composer i)
+setup env
 setup database MySQL
 Migrate the tables
 Run the seeders 
+php artisan key:generate
+php artisan jwt:secret
+install npm (npm i )
 Sign up user from vue frontend
 that's it :)
